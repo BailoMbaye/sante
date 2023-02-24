@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sante/screens/login_screen.dart';
+import 'package:sante/screens/sign_up_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -12,7 +13,7 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: 15,
+              height: 80,
             ),
             Align(
               alignment: Alignment.centerRight,
@@ -44,7 +45,7 @@ class WelcomeScreen extends StatelessWidget {
               "Reservation Doctor",
               style: TextStyle(
                 color: Color(0xFF7165D6),
-                fontSize: 35,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 1,
                 wordSpacing: 2,
@@ -62,7 +63,7 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -85,7 +86,7 @@ class WelcomeScreen extends StatelessWidget {
                         "Log In",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 22,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -97,8 +98,10 @@ class WelcomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
-                      // Navigator.push(
-                      //     context, MaterialPageRoute(builder: (context)=> ));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignUpScreen()));
                     },
                     child: Padding(
                       padding:
@@ -107,7 +110,7 @@ class WelcomeScreen extends StatelessWidget {
                         "Sign Up",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 22,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
