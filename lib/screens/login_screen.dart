@@ -83,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           EdgeInsets.symmetric(vertical: 15, horizontal: 40),
                       child: Center(
                         child: Text(
-                          "Log In",
+                          "Se connecter",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
@@ -103,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Vous n'avez pas de compte ?",
+                  "N'avez-vous pas de compte ?",
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
